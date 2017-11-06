@@ -60,7 +60,7 @@ const router = (...props) => (
                 <Tabs
                     key="tabbar"        // 唯一标识
                     wrap={true}         // 自动使用自己的导航栏包装每个场景
-                    showLabel={true}   // 显示文字
+                    showLabel={false}   // 显示文字
                     tabBarStyle={styles.tabBarStyle} // tabBar的样式
                     swipeEnabled={false}// 是否可以滑动
                     headerMode='screen' // 页面切换方式
@@ -72,18 +72,22 @@ const router = (...props) => (
                 >
                     <Stack key="Test1"
                            title={'识兔'}
-                        // image={Images.xxx}
-                        // selectedImage={Images.xxx}
+                           image={Images.ShiTu}
+                           selectedImage={Images.ShiTu}
                     >
                         <Scene component={Test1} key="Test1_key"/>
                     </Stack>
                     <Stack key='Test2'
                            title='百思'
+                           image={Images.Gank}
+                           selectedImage={Images.Gank}
                     >
                         <Scene component={Test2} key="Test2_key"/>
                     </Stack>
                     <Stack key="Test3"
                            title='我的'
+                           image={Images.Main}
+                           selectedImage={Images.Main}
                     >
                         <Scene component={Test3} key="Test3_key"/>
                     </Stack>
