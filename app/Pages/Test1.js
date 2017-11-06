@@ -19,7 +19,7 @@ export default class Test1 extends Component {
     render() {
         return (
             <View style={styles.container}>
-
+                <Text onPress={()=>Actions.Login()}>点我跳转到登陆</Text>
             </View>
         );
     }

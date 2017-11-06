@@ -93,11 +93,13 @@ const router = (...props) => (
                     </Stack>
                 </Tabs>
             </Stack>
-            <Stack gesturesEnabled={false} hideNavBar key="Login">
+            <Stack gesturesEnabled={false}  key="Login">
                 <Scene
+                    title='登录'
                     key="LoginModal"
                     component={Login}
                     gesturesEnabled={false}
+                    back
                     onExit={() => console.log('onExit')}
                     onLeft={Actions.pop}
                 />
