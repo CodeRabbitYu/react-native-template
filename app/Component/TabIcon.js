@@ -15,10 +15,10 @@ const TabIcon = (props) => {
         <View>
             <Image
                 source={!props.focused ? props.image : props.selectedImage}
-                style={[{ height:27,width:27,marginTop:5 }]}
+                style={[{ height:27,width:27,marginTop:5,tintColor:props.tintColor }]}
             />
             <Text
-                style={{color: '#fff',marginTop:px2dp(6),fontSize:FONT_SIZE(10)}}
+                style={{paddingLeft:px2dp(5),color:props.tintColor,marginTop:px2dp(6),fontSize:FONT_SIZE(10)}}
             >
                 {props.title}
             </Text>

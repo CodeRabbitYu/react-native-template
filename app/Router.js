@@ -68,8 +68,10 @@ const router = (...props) => (
                     icon={TabIcon}      // 自定义Icon显示方式
                     lazy={true}         // 是否默认渲染tabbar
                     tabBarPosition={'bottom'}       // tabbar在顶部还是底部，iOS默认顶部，安卓默认顶部
-                    activeBackgroundColor='#aaa'    // 选中tabbar的背景色
-                    inactiveBackgroundColor='#4ECBFC' // 未选中tabbar的颜色
+                    activeBackgroundColor='white'   // 选中tabbar的背景色
+                    inactiveBackgroundColor='white' // 未选中tabbar的背景色
+                    activeTintColor='#4ECBFC'       // 选中tabbar图标的颜色
+                    inactiveTintColor='#aaa'        // 未选中tabbar图标的颜色
                 >
                     <Stack key="Test1"
                            title={'识兔'}
@@ -105,7 +107,6 @@ const router = (...props) => (
                     onLeft={Actions.pop}
                 />
                 <Scene
-                    title='登录'
                     key="LoginPublic"
                     component={LoginPublic}
                     gesturesEnabled={false}
