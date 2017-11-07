@@ -31,7 +31,8 @@ import Test3 from './Pages/Test3';
 import Test4 from './Pages/Test4';
 
 
-import Login from './Pages/Login';
+import Login from './Pages/Login/Login';
+import LoginPublic from './Pages/Login/LoginPublic';
 
 const reducerCreate = params => {
     const defaultReducer = new Reducer(params);
@@ -99,7 +100,16 @@ const router = (...props) => (
                     key="LoginModal"
                     component={Login}
                     gesturesEnabled={false}
-                    back
+                    hideNavBar
+                    onExit={() => console.log('onExit')}
+                    onLeft={Actions.pop}
+                />
+                <Scene
+                    title='登录'
+                    key="LoginPublic"
+                    component={LoginPublic}
+                    gesturesEnabled={false}
+                    hideNavBar
                     onExit={() => console.log('onExit')}
                     onLeft={Actions.pop}
                 />

@@ -2,5 +2,6 @@ import { Theme } from 'teaset';
 
 Theme.set({
 
-    backgroundColor:'white'
+    backgroundColor:'white',
+    transparentColor : 'transparent',
 });
