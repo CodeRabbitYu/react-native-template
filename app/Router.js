@@ -95,6 +95,9 @@ const router = (...props) => (
                         <Scene component={Test3} key="Test3_key"/>
                     </Stack>
                 </Tabs>
+                // 推荐把需要的路由放在<Tabs/>后面，跳转的时候通过key，Actions.Test3_key
+                <Scene component={Test3} key="Test3_key"/>
+
             </Stack>
             <Stack gesturesEnabled={false}  key="Login">
                 <Scene
