@@ -49,9 +49,19 @@ const getSceneStyle = () => ({
     // shadowRadius: 3,
 });
 
+const onBackPress = () => {
+    console.log(Actions.state);
+    if (Actions.state.index !== 0) {
+        return false
+    }
+    Actions.pop()
+    return true
+}
+
 const router = (...props) => (
     <Router createReducer={reducerCreate}
             getSceneStyle={getSceneStyle}
+            backAndroidHandler={onBackPress}
     >
         <Modal
             hideNavBar
@@ -95,7 +105,7 @@ const router = (...props) => (
                         <Scene component={Test3} key="Test3_key"/>
                     </Stack>
                 </Tabs>
-                // 推荐把需要的路由放在<Tabs/>后面，跳转的时候通过key，Actions.Test3_key
+                {/*// 推荐把需要的路由放在<Tabs/>后面，跳转的时候通过key，Actions.Test3_key*/}
                 <Scene component={Test3} key="Test3_key"/>
 
             </Stack>

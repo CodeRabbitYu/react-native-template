@@ -3086,13 +3086,13 @@ minimist@1.2.0, minimist@^1.1.0, minimist@^1.1.1, minimist@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
-mobx-react@^4.2.1, mobx-react@^4.3.4:
+mobx-react@^4.3.4:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-4.3.4.tgz#58cda105b8018f9bf87bd6de333ac5eb0d5c9dfe"
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
-mobx@^3.1.16, mobx@^3.3.1:
+mobx@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.3.1.tgz#c38fc1a287a0dda3f5d4b85efe1137fedd9dcdf0"
 
@@ -3439,6 +3439,10 @@ path-to-regexp@^1.7.0:
   dependencies:
     isarray "0.0.1"
 
+path-to-regexp@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.1.0.tgz#7e30f9f5b134bd6a28ffc2e3ef1e47075ac5259b"
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -3628,12 +3632,6 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-button@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-button/-/react-native-button-2.1.0.tgz#a39e23292922afeea4f7be141dd43e18f1b51876"
-  dependencies:
-    prop-types "^15.5.10"
-
 "react-native-deprecated-custom-components@github:facebookarchive/react-native-custom-components":
   version "0.1.1"
   resolved "https://codeload.github.com/facebookarchive/react-native-custom-components/tar.gz/83c4fa19ccc9b6cd48ff80e457c493332819b486"
@@ -3668,17 +3666,17 @@ react-native-fetch-blob@^0.10.8:
     base-64 "0.1.0"
     glob "7.0.6"
 
-react-native-router-flux@^4.0.0-beta.22:
-  version "4.0.0-beta.22"
-  resolved "https://registry.yarnpkg.com/react-native-router-flux/-/react-native-router-flux-4.0.0-beta.22.tgz#d2314d9b947ca23a10302737ae5ddd9218f086c3"
+react-native-router-flux@^4.0.0-beta.27:
+  version "4.0.0-beta.27"
+  resolved "https://registry.yarnpkg.com/react-native-router-flux/-/react-native-router-flux-4.0.0-beta.27.tgz#11862319b64a750189d04ded8cdf2f98c02f1425"
   dependencies:
     lodash.isequal "^4.5.0"
-    mobx "^3.1.16"
-    mobx-react "^4.2.1"
+    mobx "^3.3.1"
+    mobx-react "^4.3.4"
     opencollective "^1.0.3"
-    prop-types "^15.5.10"
-    react-native-button "^2.0.0"
-    react-navigation "^1.0.0-beta.13"
+    path-to-regexp "^2.1.0"
+    prop-types "^15.6.0"
+    react-navigation "1.0.0-beta.22"
 
 react-native-tab-view@^0.0.70:
   version "0.0.70"
@@ -3742,9 +3740,9 @@ react-native@0.49.5:
     xmldoc "^0.4.0"
     yargs "^6.4.0"
 
-react-navigation@^1.0.0-beta.13:
-  version "1.0.0-beta.17"
-  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.0.0-beta.17.tgz#0c424a8fe4741024d346bafc35a6def7afafe934"
+react-navigation@1.0.0-beta.22:
+  version "1.0.0-beta.22"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.0.0-beta.22.tgz#be7a7a066f94a37d4eeeff01bacffabdc66c57e7"
   dependencies:
     babel-plugin-transform-define "^1.3.0"
     clamp "^1.0.1"
@@ -4365,9 +4363,9 @@ tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
-teaset@^0.4.7:
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/teaset/-/teaset-0.4.7.tgz#5ca6ee77b6c20353f9784c013f71c3a0c80182a5"
+teaset@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/teaset/-/teaset-0.5.3.tgz#bbd9e5b249e475797c4249d2fab51d2181095b5e"
   dependencies:
     prop-types "^15.5.10"
     react-native-deprecated-custom-components "github:facebookarchive/react-native-custom-components"
